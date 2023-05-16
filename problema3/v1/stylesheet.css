@@ -1,0 +1,102 @@
+body {
+    height: 100vh - 200px;
+    background: linear-gradient(15deg, #e28102, #0066ff);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+table {
+    border-collapse:separate;
+    border-spacing: 25px;
+}
+
+#wrapper {
+    margin: 0 auto;
+    margin-top: 200px;
+    border-style: solid;
+    border-color: white;
+    border-radius: 5%;
+    background-color: #ffffff;
+}
+
+td {
+    width: 50px;
+    height: 50px;
+    border: 1px solid  #acacac;
+    border-radius: 15%;
+    background-color: #5481d4;
+    box-shadow: 5px 5px 5px rgba(52, 22, 221, 0.2);
+    text-align: center;
+    font-size: xx-large;
+    padding: 50px;
+    color: rgb(255, 255, 255);
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+    animation: rotatie 0.5s ease-in;
+}
+
+
+.back-card{
+    pointer-events: none;
+    user-select: none;
+}
+
+.front-card {
+    color: black;
+    pointer-events: none;
+    user-select: none;
+}
+
+@keyframes rotatie {
+    50% {
+        transform: translateY(-7px);
+    }
+}
+
+.correct {
+    color: 3f3f3f;
+    background-color: #03e976;
+    animation: correct-match 0.60s ease-in;
+}
+
+@keyframes correct-match {
+    0% { 
+        background-color: #20b96d;
+    }
+
+    50% {
+        background-color: #03e976;
+    }
+
+}
+
+.card {
+    color: transparent;
+    background-color: #ffffff;
+    animation: fadein 0.70s ease-in;
+}
+
+@keyframes fadein {
+    0% {
+        background-color: white;
+    }
+    50% {
+        background-color: #b0cefc;
+    }
+
+    75% {
+        background-color: #b1d0ff;
+    }
+}
